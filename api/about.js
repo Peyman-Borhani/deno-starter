@@ -2,6 +2,8 @@
 // import { h } from "https://x.lcas.dev/preact@10.5.12/mod.js";
 // import { renderToString } from "https://x.lcas.dev/preact@10.5.12/ssr.js";
 
+import { json }  from  "../deps.js" ;
+
 function  App() {
           return `  <html>
                       <head>    <title> Hello </title>    </head>
@@ -13,7 +15,7 @@ function  App() {
 }
 
 export  default async function index() {
-        return  new   Response( App(),
-                                {headers: {'Content-Type': 'text/html'}}
+        return  new   Response( `<h1> About </h1>`,
+                                { headers: {'Content-Type': 'text/html'} }
         );
 }
