@@ -10,7 +10,7 @@ serve(  {
           '/about' :   getAbout
         }
 );
-
+/*  replaced by sift...
 addEventListener('fetch', (event) => {
     const response =  new Response( 'Hello GitPod', 
                                     { headers: {'Content-Type': 'text/plain'} }
@@ -18,3 +18,4 @@ addEventListener('fetch', (event) => {
 
   event.respondWith(response);
 });
+*/
